@@ -5,6 +5,16 @@
   font-size: 14px;
   height: calc(100vh - 80px);
   display: flex;
+
+  .content-left {
+    width: 20%;
+    padding: 10px;
+  }
+  .content-right {
+    width: 80%;
+    padding: 10px;
+    color: white;
+  }
 }
 
 .App-logo {
@@ -21,9 +31,9 @@
 .App-header {
   /* min-height: 100vh; */
   /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -40,15 +50,7 @@
     transform: rotate(360deg);
   }
 }
-.content-left {
-  width: 50%;
-  padding: 10px;
-}
-.content-right {
-  width: 50%;
-  padding: 10px;
-  color: white;
-}
+
 .input-product {
   display: flex;
   flex-direction: column;
