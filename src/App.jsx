@@ -5,6 +5,8 @@ import AddNewProduct from "./components/AddNewProduct";
 import Product from "./components/Products/Product";
 import "react-image-lightbox/style.css";
 import Nav from "./components/Navigation/Nav";
+import Weather from "./components/Weather/Weather";
+import OTP from "./components/OTP/OTP";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -32,7 +34,10 @@ function App() {
           <Product />
         </Route>
         <Route path="/weather">
-          <div>Weather App</div>
+          <Weather />
+        </Route>
+        <Route path="/otp">
+          <OTP />
         </Route>
         <Route path="/about">
           <div>About</div>
