@@ -16,7 +16,7 @@ const CountDown = (props) => {
     return () => {
       clearInterval(timer);
     };
-  }, [count]);
+  }, [count, props]);
   return <div>{count}</div>;
 };
 
