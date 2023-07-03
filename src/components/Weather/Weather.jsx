@@ -1,45 +1,17 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import Search from "./Search";
+import "./Weather.scss";
+import WeatherByLocation from "./WeatherByLocation";
 
 const Weather = () => {
-  const [title, setTitle] = useState("");
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(async () => {
-    let response = await axios({
-      method: "post",
-      url: "http://localhost:8080/get-data-by-url",
-      data: { url: "https://www.metaweather.com/api/location/1236594/" },
-    });
-    setTimeout(() => {
-      setTitle(response.data.title);
-    }, 0);
-  }, []);
-  return <div>title= {title}</div>;
+  return (
+    <div className="weather-app-container">
+      <Search />
+      <hr />
+      <WeatherByLocation woeidFromParent={"1236594"} />
+      <hr />
+      <WeatherByLocation woeidFromParent={"1252431"} />
+    </div>
+  );
 };
 
-// class Weather extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       title: "",
-//     };
-//   }
-
-//   async componentDidMount() {
-//     // let data= await axios.get("https://www.metaweather.com/api/location/1236594/")
-
-//     let response = await axios({
-//       method: "post",
-//       url: "http://localhost:8080/get-data-by-url",
-//       data: { url: "https://www.metaweather.com/api/location/1236594/" },
-//     });
-//     this.setState({
-//       title: response.data.title,
-//     });
-//     console.log("check data", response.data);
-//   }
-//   render() {
-//     return <div>title= {this.state.title}</div>;
-//   }
-// }
 export default Weather;

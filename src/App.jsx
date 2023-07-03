@@ -7,6 +7,7 @@ import "react-image-lightbox/style.css";
 import Nav from "./components/Navigation/Nav";
 import Weather from "./components/Weather/Weather";
 import OTP from "./components/OTP/OTP";
+import WeatherByLocation from "./components/Weather/WeatherByLocation";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -33,7 +34,7 @@ function App() {
         <Route path="/product">
           <Product />
         </Route>
-        <Route path="/weather">
+        <Route path="/weather" exact>
           <Weather />
         </Route>
         <Route path="/otp">
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path="/about">
           <div>About</div>
+        </Route>
+        <Route path="/weather/detail/:woeid">
+          <WeatherByLocation />
         </Route>
         <Route path="*">
           <div>404 Not Found!</div>
