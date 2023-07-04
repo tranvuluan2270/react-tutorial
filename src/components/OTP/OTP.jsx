@@ -9,10 +9,20 @@ const OTP = () => {
   const [isDisableBtn, setIsDisableBtn] = useState(false);
 
   const handleSubmitOTP = () => {
+    if (!orgOTPParent) {
+      alert("Please generate an OTP");
+      return;
+    }
+
+    if (!userOTPParent) {
+      alert("Please enter an OTP below");
+      return;
+    }
+
     if (+orgOTPParent === +userOTPParent) {
       alert("Correct OTP");
     } else {
-      alert("Wrong OTP");
+      alert("Incorrect OTP");
     }
   };
   return (
