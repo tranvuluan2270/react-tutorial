@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-tutortial/static/css/main.5a405ebe.css",
-    "main.js": "/react-tutortial/static/js/main.8f300fd1.js",
+    "main.css": "/react-tutortial/static/css/main.7fe374fa.css",
+    "main.js": "/react-tutortial/static/js/main.6af71a2d.js",
     "static/js/787.80ad641d.chunk.js": "/react-tutortial/static/js/787.80ad641d.chunk.js",
     "static/media/heel-tab.jpg": "/react-tutortial/static/media/heel-tab.50f01d3922062a9de02a.jpg",
     "static/media/side-view1.jpg": "/react-tutortial/static/media/side-view1.e01f07c9e7e35f941219.jpg",
@@ -11,12 +11,12 @@
     "static/media/overview1.jpg": "/react-tutortial/static/media/overview1.91ab613702073fa240f5.jpg",
     "static/media/logo.svg": "/react-tutortial/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-tutortial/index.html",
-    "main.5a405ebe.css.map": "/react-tutortial/static/css/main.5a405ebe.css.map",
-    "main.8f300fd1.js.map": "/react-tutortial/static/js/main.8f300fd1.js.map",
+    "main.7fe374fa.css.map": "/react-tutortial/static/css/main.7fe374fa.css.map",
+    "main.6af71a2d.js.map": "/react-tutortial/static/js/main.6af71a2d.js.map",
     "787.80ad641d.chunk.js.map": "/react-tutortial/static/js/787.80ad641d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a405ebe.css",
-    "static/js/main.8f300fd1.js"
+    "static/css/main.7fe374fa.css",
+    "static/js/main.6af71a2d.js"
   ]
 }
