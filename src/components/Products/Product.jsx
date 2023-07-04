@@ -83,13 +83,15 @@ const Product = () => {
           </div>
         </div>
         <div className="content-right">
-          <div className="title">Air Jordan 3 Retro NRG 'Tinker'</div>
-          <div className="price">$318</div>
-          <div className="size">Size: 8US</div>
-          <div className="action">
-            <label className="quantity">Quantity</label>
-            <input type="number" min={1} value={1} />
-            <button className="buy">Buy</button>
+          <div className="info">
+            <div className="title">Air Jordan 3 Retro NRG 'Tinker'</div>
+            <div className="price">$318</div>
+            <div className="size">Size: 8US</div>
+            <div className="action">
+              <label className="quantity">Quantity:</label>
+              <input type="number" min={1} value={1} />
+              <button className="buy">Buy</button>
+            </div>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const AddNewProduct = () => {
   const [price, setPrice] = useState(0);
   const [size, setSize] = useState(0);
   const [color, setColor] = useState("");
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
 
   const handleClick = () => {
     let obj = { name, price, size, color };
@@ -72,21 +72,21 @@ const AddNewProduct = () => {
       )}
 
       {isShow === true ? (
-        <div
+        <button
           onClick={() => {
             handleShowHide();
           }}
         >
           Hide this form
-        </div>
+        </button>
       ) : (
-        <div
+        <button
           onClick={() => {
             handleShowHide();
           }}
         >
           Show this form
-        </div>
+        </button>
       )}
       <div>
         List Products:

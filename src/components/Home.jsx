@@ -1,6 +1,8 @@
 import { useState } from "react";
+import logo from "../logo.svg";
 import AddTodo from "./AddTodo";
 import DisplayTodo from "./DisplayTodo";
+import AddNewProduct from "./AddNewProduct";
 
 const Home = () => {
   const [todo, setTodo] = useState("");
@@ -33,13 +35,23 @@ const Home = () => {
     setTodoList(currentTodoList);
   };
   return (
-    <div>
-      <div>
-        <AddTodo todo={todo} setTodo={setTodo} handleClick={handleClick} />
-
-        <DisplayTodo todoList={todoList} handleDelete={handleDelete} />
+    <div className="App">
+      <div className="App-logo">
+        <img src={logo} alt="logo" />
       </div>
-      <br />
+      <div className="App-content">
+        <div className="content-left">
+          <fieldset className="todo">
+            <AddTodo todo={todo} setTodo={setTodo} handleClick={handleClick} />
+            <DisplayTodo todoList={todoList} handleDelete={handleDelete} />
+          </fieldset>
+        </div>
+        <div className="content-right">
+          <fieldset className="product">
+            <AddNewProduct />
+          </fieldset>
+        </div>
+      </div>
     </div>
   );
 };

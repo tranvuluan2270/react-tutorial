@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
-import "./App.scss";
+import "./Home.scss";
 import Home from "./components/Home";
-import AddNewProduct from "./components/AddNewProduct";
 import Product from "./components/Products/Product";
 import "react-image-lightbox/style.css";
 import Nav from "./components/Navigation/Nav";
@@ -17,19 +15,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <div className="App">
-            <header className="App-header content-left">
-              <div style={{ textAlign: "center" }}>
-                <img src={logo} className="App-logo" alt="logo" />
-              </div>
-              <Home />
-            </header>
-            <div className="content-right">
-              <AddNewProduct />
-              <hr />
-              <Product />
-            </div>
-          </div>
+          <Home />
         </Route>
         <Route path="/product">
           <Product />
