@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/" exact>
+        <Route exact path="/">
           <div className="App">
             <header className="App-header content-left">
               <div style={{ textAlign: "center" }}>
@@ -40,14 +40,8 @@ function App() {
         <Route path="/otp">
           <OTP />
         </Route>
-        <Route path="/about">
-          <div>About</div>
-        </Route>
         <Route path="/weather/detail/:woeid">
           <WeatherByLocation />
-        </Route>
-        <Route path="*">
-          <div>404 Not Found!</div>
         </Route>
       </Switch>
     </Router>
