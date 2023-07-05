@@ -1,30 +1,31 @@
-.weather-state-container {
-  display: flex;
-  align-items: center;
-  .icon-state {
-    img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-  .name-state {
-    font-size: 16px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    margin-left: 5px;
-  }
-}
 .weather-day-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 15px;
   font-size: 14px;
+  text-align: center;
+
+  .weather-state-container {
+    display: flex;
+    align-items: center;
+    .icon-state {
+      display: flex;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .name-state {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
 
   .date {
     color: #337ab7;
   }
 
-  .state {
-    margin-top: 10px;
-  }
   .min {
     margin-top: 5px;
   }
