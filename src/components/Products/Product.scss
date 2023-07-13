@@ -17,8 +17,9 @@
     .img-lower {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-
+      justify-content: space-around;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
       .img-list {
         padding: 10px;
         .active {
@@ -41,12 +42,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
 
     .info {
-      width: 70%;
-      border: 1px solid grey;
-      border-radius: 3px;
-      padding: 50px;
+      width: 80%;
 
       .title {
         font-size: 30px;
@@ -54,21 +54,19 @@
         padding: 10px 0;
       }
       .price {
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 600;
         padding: 10px 0;
       }
-      .size {
+      .size,
+      .quantity {
         padding: 10px 0;
+        font-size: 20px;
       }
       .action {
         display: flex;
         flex-direction: column;
         gap: 10px;
-
-        .quantity {
-          padding: 10px 0;
-        }
 
         input {
           outline: none;

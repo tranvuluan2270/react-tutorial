@@ -26,6 +26,13 @@
         justify-content: center;
         padding: 30px;
 
+        .list-todo {
+          display: flex;
+          gap: 15px;
+          margin-bottom: 15px;
+          justify-content: space-between;
+        }
+
         input {
           outline: none;
           border: none;
